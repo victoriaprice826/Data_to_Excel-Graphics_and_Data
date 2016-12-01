@@ -48,7 +48,7 @@ EMGC3 = find(~cellfun(@isempty,Find_EMGC3));
    
 % Plot graphs (each muscle group) for each condtion
 %C1 Graphs
-h(1)= figure ('Name','EMG C1','Visible','off');
+h(1)= figure ('Name','EMG C1');
 subplot (4,1,1);
 plot(BFC1);
 xlabel('Time');
@@ -73,7 +73,7 @@ title('Anterior Tibialis');
 
 
 %C2 Graphs
-h(2)=figure ('Name','EMG C2', 'Visible','off')
+h(2)=figure ('Name','EMG C2')
 subplot (4,1,1);
 plot(BFC2);
 xlabel('Time');
@@ -97,7 +97,7 @@ ylabel('Frequency');
 title('Anterior Tibialis');
 
 %C3 Graphs
-h(3)=figure ('Name','EMG C3', 'Visible','off');
+h(3)=figure ('Name','EMG C3');
 subplot (4,1,1);
 plot(BFC3);
 xlabel('Time');
@@ -147,7 +147,7 @@ GRFC3 = find(~cellfun(@isempty,Find_GRFC3));
 
 % Plot graphs for each condtion
 %C1 Graphs
-h(4)=figure ('Name','GRF C1','Visible','off');
+h(4)=figure ('Name','GRF C1');
 subplot (2,1,1);
 plot(GRForceC1);
 xlabel('Time');
@@ -161,7 +161,7 @@ ylabel('Frequency');
 title('Center of Pressure');
 
 %C2 Graphs
-h(5)=figure ('Name','GRF C2','Visible','off');
+h(5)=figure ('Name','GRF C2');
 subplot (2,1,1);
 plot(GRForceC2);
 xlabel('Time');
@@ -175,7 +175,7 @@ ylabel('Frequency');
 title('Center of Pressure');
 
 %C3 Graphs
-h(6)=figure ('Name','GRF C3','Visible','off');
+h(6)=figure ('Name','GRF C3');
 subplot (2,1,1);
 plot(GRForceC3);
 xlabel('Time');
@@ -222,7 +222,7 @@ JMFC3 = find(~cellfun(@isempty,Find_JMFC3));
 
 % Plot graphs for each condtion
 %C1 Graphs
-h(7)=figure ('Name','JMF C1','Visible','off');
+h(7)=figure ('Name','JMF C1');
 subplot (4,1,1);
 plot(SupportTorqueC1);
 xlabel('Time');
@@ -246,7 +246,7 @@ ylabel('Torque (Nm)');
 title('Ankle Torque');
 
 %C2 Graphs
-h(8)=figure ('Name','JMF C2','Visible','off');
+h(8)=figure ('Name','JMF C2');
 subplot (4,1,1);
 plot(SupportTorqueC2);
 xlabel('Time');
@@ -270,7 +270,7 @@ ylabel('Torque (Nm)');
 title('Ankle Torque');
 
 %C3 Graphs
-h(9)=figure ('Name','JMF C3','Visible','off');
+h(9)=figure ('Name','JMF C3');
 subplot (4,1,1);
 plot(SupportTorqueC3);
 xlabel('Time');
@@ -322,7 +322,7 @@ JPC3 = find(~cellfun(@isempty,Find_JPC3));
    HipAngPosC3= JP(:, JPC3+7:9:JPC3(end));  
    
 %C1 Graphs
-h(10)=figure ('Name','JP C1','Visible','off');
+h(10)=figure ('Name','JP C1');
 subplot (3,1,1);
 plot(HipAngPosC1);
 xlabel('Time');
@@ -341,7 +341,7 @@ ylabel('Postion (m)');
 title('Ankle Angular Position');
 
 %C2 Graphs
-h(11)=figure ('Name','JP C2','Visible','off');
+h(11)=figure ('Name','JP C2');
 subplot (3,1,1);
 plot(HipAngPosC2);
 xlabel('Time');
@@ -360,7 +360,7 @@ ylabel('Postion (m)');
 title('Ankle Angular Position');
 
 %C3 Graphs
-h(12)=figure ('Name','JP C3','Visible','off');
+h(12)=figure ('Name','JP C3');
 subplot (3,1,1);
 plot(HipAngPosC3);
 xlabel('Time');
@@ -407,7 +407,7 @@ JRFC3 = find(~cellfun(@isempty,Find_JRFC3));
    HipForceC3= JRF(:, JRFC3+8:9:JRFC3(end));  
    
 %C1 Graphs
-h(13)=figure ('Name','JRF C1','Visible','off');
+h(13)=figure ('Name','JRF C1');
 subplot (3,1,1);
 plot(HipForceC1);
 xlabel('Time');
@@ -426,7 +426,7 @@ ylabel('Force (N)');
 title('Ankle Joint Force');
 
 %C2 Graphs
-h(14)=figure ('Name','JRF C2','Visible','off');
+h(14)=figure ('Name','JRF C2');
 subplot (3,1,1);
 plot(HipForceC2);
 xlabel('Time');
@@ -445,7 +445,7 @@ ylabel('Force (N)');
 title('Ankle Joint Force');
 
 %C3 Graphs
-h(15)=figure ('Name','JRF C3','Visible','off');
+h(15)=figure ('Name','JRF C3');
 subplot (3,1,1);
 plot(HipForceC3);
 xlabel('Time');
@@ -492,7 +492,7 @@ JVC3 = find(~cellfun(@isempty,Find_JVC3));
    HipVelC3= JP(:, JVC3+6:9:JVC3(end));  
    
 %C1 Graphs
-h(16)=figure ('Name','JV C1','Visible','off');
+h(16)=figure ('Name','JV C1');
 subplot (3,1,1);
 plot(HipVelC1);
 xlabel('Time');
@@ -511,7 +511,7 @@ ylabel('Velocity (m/s)');
 title('Ankle Velocity');
 
 %C2 Graphs
-h(17)=figure ('Name','JV C2','Visible','off');
+h(17)=figure ('Name','JV C2');
 subplot (3,1,1);
 plot(HipVelC2);
 xlabel('Time');
@@ -530,7 +530,7 @@ ylabel('Velocity (m/s)');
 title('Ankle Velocity');
 
 %C3 Graphs
-h(18)=figure ('Name','JV C3','Visible','off');
+h(18)=figure ('Name','JV C3');
 subplot (3,1,1);
 plot(HipVelC3);
 xlabel('Time');
@@ -583,7 +583,7 @@ LPC3 = find(~cellfun(@isempty,Find_LPC3));
    PelvisLPosC3= LP(:, LPC3+14:15:LPC3(end));
    
 %C1 Graphs
-h(19)=figure ('Name','LP C1','Visible','off');
+h(19)=figure ('Name','LP C1');
 subplot (5,1,1);
 plot(PelvisLPosC1);
 xlabel('Time');
@@ -612,7 +612,7 @@ ylabel('Position (m)');
 title('Methead Position');
 
 %C2 Graphs
-h(20)=figure ('Name','LP C2','Visible','off');
+h(20)=figure ('Name','LP C2');
 subplot (5,1,1);
 plot(PelvisLPosC2);
 xlabel('Time');
@@ -641,7 +641,7 @@ ylabel('Position (m)');
 title('Methead Position');
 
 %C3 Graphs
-h(21)=figure ('Name','LP C3','Visible','off');
+h(21)=figure ('Name','LP C3');
 subplot (5,1,1);
 plot(PelvisLPosC3);
 xlabel('Time');
@@ -683,7 +683,7 @@ MVCfile = strcat(sbjtnum, '-MVC.csv');
    MaxAT= MVC(:, MVC(4));    %Anterior Tibialis
 
 %Graph
-h(22)=figure ('Name','MVC','Visible','off');
+h(22)=figure ('Name','MVC');
 subplot (4,1,1);
 plot(MaxBF);
 xlabel('Time');
@@ -738,7 +738,7 @@ PWRC3 = find(~cellfun(@isempty,Find_PWRC3));
 
 % Plot graphs for each condtion
 %C1 Graphs
-h(23)=figure ('Name','PWR C1','Visible','off');
+h(23)=figure ('Name','PWR C1');
 subplot (4,1,1);
 plot(TotalPwrC1);
 xlabel('Time');
@@ -762,7 +762,7 @@ ylabel('Power (J/s)');
 title('Ankle Power');
 
 %C2 Graphs
-h(24)=figure ('Name','PWR C2','Visible','off');
+h(24)=figure ('Name','PWR C2');
 subplot (4,1,1);
 plot(TotalPwrC2);
 xlabel('Time');
@@ -786,7 +786,7 @@ ylabel('Power (J/s)');
 title('Ankle Power');
 
 %C3 Graphs
-h(25)=figure ('Name','PWR C3','Visible','off');
+h(25)=figure ('Name','PWR C3');
 subplot (4,1,1);
 plot(TotalPwrC3);
 xlabel('Time');
@@ -842,7 +842,7 @@ SAPC3 = find(~cellfun(@isempty,Find_SAPC3));
 
 % Plot graphs for each condtion
 %C1 Graphs
-h(26)=figure ('Name','SAP C1','Visible','off');
+h(26)=figure ('Name','SAP C1');
 subplot (4,1,1);
 plot(PelvisPosC1);
 xlabel('Time');
@@ -866,7 +866,7 @@ ylabel('Position (m)');
 title('Foot Position');
 
 %C2 Graphs
-h(27)=figure ('Name','SAP C2','Visible','off');
+h(27)=figure ('Name','SAP C2');
 subplot (4,1,1);
 plot(PelvisPosC2);
 xlabel('Time');
@@ -890,7 +890,7 @@ ylabel('Position (m)');
 title('Foot Position');
 
 %C3 Graphs
-h(28)=figure ('Name','SAP C3','Visible','off');
+h(28)=figure ('Name','SAP C3');
 subplot (4,1,1);
 plot(PelvisPosC3);
 xlabel('Time');
@@ -946,7 +946,7 @@ SAVC3 = find(~cellfun(@isempty,Find_SAVC3));
 
 % Plot graphs for each condtion
 %C1 Graphs
-h(29)=figure ('Name','SAV C1','Visible','off');
+h(29)=figure ('Name','SAV C1');
 subplot (4,1,1);
 plot(PelvisVelC1);
 xlabel('Time');
@@ -970,7 +970,7 @@ ylabel('Velocity (m/s)');
 title('Foot Velocity');
 
 %C2 Graphs
-h(30)=figure ('Name','SAV C2','Visible','off');
+h(30)=figure ('Name','SAV C2');
 subplot (4,1,1);
 plot(PelvisVelC2);
 xlabel('Time');
@@ -994,7 +994,7 @@ ylabel('Velocity (m/s)');
 title('Foot Velocity');
 
 %C3 Graphs
-h(31)=figure ('Name','SAV C3','Visible','off');
+h(31)=figure ('Name','SAV C3');
 subplot (4,1,1);
 plot(PelvisVelC3);
 xlabel('Time');
