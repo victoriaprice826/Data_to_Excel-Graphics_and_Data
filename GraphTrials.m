@@ -5,8 +5,8 @@ function [ graphsloaded ] = GraphTrials( sbjtnum )
 %   Creates sub folder(S#-ConditionGraphs)for graphs after they have been created
 %       Inputs: sbjtnum (participant number in string format)
 %       Outputs: graphsloaded (boolian value determining if function was
-%       successful or not, subfolder created with saved graphs in it
-%       (graphs saved as png images numbered 1-31)
+%       successful or not, subfolder created to save graphs in it
+%     
 %   Created by Victoria Price (Fall 2016, Matlab 2016a)
 
 %% Directory for files, defaults to current file if not edited.
@@ -1019,11 +1019,11 @@ title('Foot Velocity');
 
 %% Export the graphs to a new folder (S#-ConditionGraphs)- images are numbered 1-31
 
-for h=1:31;
-    baseFileName =  sprintf('%d.png', h);
-    fullFileName = fullfile(SubFolderNAME, baseFileName);
-    saveas(gcf, fullFileName);
-end;
+% for h=1:31;
+%     baseFileName =  sprintf('%d.png', h);
+%     fullFileName = fullfile(SubFolderNAME, baseFileName);
+%     saveas(fig, fullFileName);
+% end;
 
 graphsloaded= true;
 end
