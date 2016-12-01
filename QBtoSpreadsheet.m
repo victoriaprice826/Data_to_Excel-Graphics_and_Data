@@ -21,7 +21,7 @@ clear all; clc;
 
 %% Adjustable Variables for spreadsheets
 % define directory to data files and Spreadsheet name
-DIRECTORY = cd('U:\test');
+DIRECTORY = cd('X:\Research\Foam_Running - Fall 2015\Prjt_Materials');
 Spreadsheet = 'MatlabPrjt_Fall2016.xlsx';
 
 Again='Y';

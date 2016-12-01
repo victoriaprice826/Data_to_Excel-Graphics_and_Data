@@ -7,10 +7,10 @@ function [ graphsloaded ] = GraphTrials( sbjtnum )
 %       Outputs: graphsloaded (boolian value determining if function was
 %       successful or not, subfolder created with saved graphs in it
 %       (graphs saved as png images numbered 1-31)
-%   Created by Victoria Price (Fall 2016, Matlab 2014a)
+%   Created by Victoria Price (Fall 2016, Matlab 2016a)
 
 %% Directory for files, defaults to current file if not edited.
-%DIRECTORY = cd('U:\test');
+%DIRECTORY = cd('X:\Research\Foam_Running - Fall 2015\Prjt_Materials');
 graphsloaded = false;       %notes graphs are not loaded
 SubFolderNAME = strcat(sbjtnum, '-Condtion Graphs');
 mkdir(SubFolderNAME);
